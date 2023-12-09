@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        body{
+          
+            box-sizing: border-box;
+        
+        }
+        #div1 h1{
+            display: flex;
+            justify-content: center;
+            /* margin-top: 300px; */
+          
+            
+        }
+
+        .d1{
+        
+            height: 80vh;
+            display: flex;
+
+            /* align-items: center; */
+            justify-content: center;
+            align-items: center;  
+        }
+        #d2{
+           
+            /* display: flex; */
+            border: 2px solid black;
+             /* margin: 13px; */
+             padding: 13px;
+             text-align: center;
+             border-radius: 10px;      
+        }
+        #ip1{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+            /* font-size: 30px; */
+        }
+        #btn1{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        #btn2{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+        }
+
+        @media(min-width:400px) and (max-width : 700px)
+    {
+        body{
+          
+          box-sizing: border-box;
+      
+        }
+        #div1 h1{
+            display: flex;
+            justify-content: center;
+            /* margin-top: 300px; */
+            
+            
+        }
+
+        .d1{
+        
+            height: 80vh;
+            display: flex;
+
+            /* align-items: center; */
+            justify-content: center;
+            align-items: center;  
+        }
+        #d2{
+            
+            /* display: flex; */
+            border: 2px solid black;
+            /* margin: 13px; */
+            padding: 13px;
+            text-align: center;
+            border-radius: 10px;      
+        }
+        #ip1{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+            /* font-size: 30px; */
+        }
+        #btn1{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        #btn2{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+        }
+        
+
+    }
+
+    @media(min-width:700px) and (max-width : 900px)
+    {
+        body{
+          
+          box-sizing: border-box;
+      
+        }
+        #div1 h1{
+            display: flex;
+            justify-content: center;
+            /* margin-top: 300px; */
+            
+            
+        }
+
+        .d1{
+        
+            height: 80vh;
+            display: flex;
+
+            /* align-items: center; */
+            justify-content: center;
+            align-items: center;  
+        }
+        #d2{
+            
+            /* display: flex; */
+            border: 2px solid black;
+            /* margin: 13px; */
+            padding: 13px;
+            text-align: center;
+            border-radius: 10px;      
+        }
+        #ip1{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+            /* font-size: 30px; */
+        }
+        #btn1{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        #btn2{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+        }
+        
+
+    }
+
+    @media(min-width:900px) and (max-width : 1200px)
+    {
+        body{
+          
+          box-sizing: border-box;
+      
+        }
+        #div1 h1{
+            display: flex;
+            justify-content: center;
+            /* margin-top: 300px; */
+            
+            
+        }
+
+        .d1{
+        
+            height: 80vh;
+            display: flex;
+
+            /* align-items: center; */
+            justify-content: center;
+            align-items: center;  
+        }
+        #d2{
+            
+            /* display: flex; */
+            border: 2px solid black;
+            /* margin: 13px; */
+            padding: 13px;
+            text-align: center;
+            border-radius: 10px;      
+        }
+        #ip1{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+            /* font-size: 30px; */
+        }
+        #btn1{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        #btn2{
+            margin: 5px;
+            border-color: rgb(65, 42, 165);
+            border-radius: 30px;
+        }
+        
+
+    }
+      
+    </style>
+</head>
+<body>
+   
+    <div id="div1">
+        <h1>TODO</h1>
+        <div class="d1">
+        
+        
+            <div id="d2">
+                <label for="text">Enter your Text : </label>
+                
+                <input type="text" id="ip1">
+                <br>
+                <button id="btn1">Submit</button>
+                <br>
+                <button id="btn2">Clear Text</button>
+            </div>
+    
+        </div>
+    </div>
+
+    <script>
+        const t=document.getElementById("ip1");
+        const b=document.getElementById("btn1");
+        const c=document.getElementById("btn2");
+        // const t1=t.value
+        b.addEventListener("click",function()
+        {
+            const para1=document.createElement("p");
+            para1.innerText=t.value
+            document.getElementById("d2").appendChild(para1);
+        });
+        c.addEventListener("click",function()
+        {
+            t.value=null
+        });
+    </script>
+</body>
+</html>

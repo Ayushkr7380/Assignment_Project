@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin: 0%;
+            padding: 0%;
+        }
+        #change{
+            margin: 40vh;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100px;
+            height: 40px;
+            font-weight: bold;
+            border-radius:13px;
+        }
+        #change:hover{
+            color: white;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button id="change">Click</button>
+
+
+    <script>
+        const arr = ['#FF0000','#00FF00','#00FF00'];
+
+        function colors(){
+            arrindex = Math.floor(Math.random() * arr.length);
+            return arr[arrindex];
+        }
+
+        function change(){
+            document.body.style.backgroundColor = colors();
+        }
+
+        const btn = document.getElementById('change');
+        btn.addEventListener('click',change);
+    </script>
+</body>
+</html>

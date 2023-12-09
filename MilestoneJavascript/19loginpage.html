@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            border: 2px solid black;
+            padding: 30px;
+            justify-content: center;
+            text-align: center;
+           
+        }
+        #email{
+            margin: 5px;
+           
+        }
+        #password{
+            margin: 5px;
+        }
+        #btn{
+            margin: 5px;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 20px;
+
+        }
+        #btn:HOVER{
+                background-color: aqua;
+                cursor: pointer;
+        }
+        .success{
+            color: Green;
+        }
+        .error{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <label for="email" >Email</label>
+            <input type="text" name="email" id="email" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <button type="submit" id="btn">submit
+            </button>
+            <p id="message"></p>
+        </form>
+        
+    </div>
+    <script>
+        const f=document.getElementById("form");
+        const e=document.getElementById("email");
+        const p=document.getElementById("password");
+        const m=document.getElementById("message");
+        f.addEventListener("submit",function(event)
+        {
+            event.preventDefault();
+            const email1=e.value;
+            const password1=p.value;
+            if(email1.includes("@")&&password1.length>=8)
+            {
+                m.textContent="Valid Email and Passaword."
+                m.className="success"
+            }
+            else{
+                m.textContent="Invalid Email and Password."
+                m.className="error"
+            }
+        })
+    </script>
+</body>
+</html>

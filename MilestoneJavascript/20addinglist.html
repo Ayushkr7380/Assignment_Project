@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 100px;
+            border: 2px solid black;
+            overflow:auto;
+        }
+        #heading h1{
+            text-align: center;
+        }
+        #btnfather{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        #btn{
+            height: 40px;
+            width: 100px;
+            font-size: 24px;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Data</h1>
+    </div>
+    <div id="main">
+        <ol id="father"></ol>
+    </div>
+    <div id="btnfather">
+        <button id="btn">click</button>
+    </div>
+    
+
+    <script>
+
+        let btn = document.getElementById('btn');
+        let father = document.getElementById('father');
+            let arrayofdata = [
+            'JavaScript Basics',
+            'DOM Manipulation',
+            'Event Handling',
+            'Asynchronous Programming',
+            'API Integration',
+            'Framework Usage',
+                ];
+            index1 = 0;
+            function add(){
+                if(index1 < arrayofdata.length)
+                {
+                    let newli = document.createElement('li');
+                    newli.textContent = arrayofdata[index1];
+                    father.appendChild(newli);
+                }
+                else{
+                    alert('All items have been added..');
+
+                }
+                index1++;
+            }
+
+            btn.addEventListener('click',add);
+            
+    </script>
+</body>
+</html>

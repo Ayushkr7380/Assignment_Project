@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>highlighted</title>
+  <style>
+    .highlighted {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h3 id="paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, minima aliquid repudiandae est nobis dicta quam fugit libero iste repellat exercitationem ad ab tenetur eligendi! Numquam consequuntur asperiores quae atque facilis perferendis, dolore voluptatem commodi alias recusandae quod nemo nostrum amet odit placeat fugiat impedit blanditiis possimus ipsum neque nulla aliquam. Delectus ex ipsum unde expedita sunt officia voluptate eos, aperiam veniam earum temporibus praesentium tempore alias pariatur asperiores, nulla quas inventore, quis aspernatur debitis sapiente culpa repellendus dolorem! Ad eum a, deleniti ratione et veniam quasi, magni quidem provident nobis incidunt officia, impedit rem cumque amet. Atque, minima molestiae.
+  </h3>
+
+  <script>
+    const paragraph = document.getElementById('paragraph');
+
+    const words = paragraph.textContent.split(' ');
+
+    for (let i = 0; i < words.length; i++) 
+    {
+        let w = words[i];
+        if (w.length > 8) {
+
+        const span = document.createElement('span');
+        span.textContent = w;
+        span.classList.add('highlighted');
+        paragraph.innerHTML = paragraph.innerHTML.replace(w, span.outerHTML);
+      }
+    }
+  </script>
+
+</body>
+</html>

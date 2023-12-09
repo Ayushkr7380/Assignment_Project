@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrowmovement</title>
+    <style>
+        #father{
+            position: relative;
+        }
+        #son{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <img id="son" src="img1.jpg" alt="img1">
+    </div>
+
+
+    <script>
+
+        let x = 0;
+        let y = 0;
+
+        const movingimg = document.getElementById('son');
+
+        function action(){
+            movingimg.style.transform = `translate(${x}px,${y}px)`;
+        }
+
+        document.addEventListener('keydown',(event)=>{
+            switch(event.key)
+            {
+                case 'ArrowUp':
+                    y = y - 10;
+                    break;
+                
+                case 'ArrowDown':
+                    y = y+ 10;
+                    break;
+                
+                case 'ArrowLeft':
+                    x = x - 10;
+                    break;
+
+                case 'ArrowRight':
+                    x = x + 10;
+            }
+            action();
+        });
+
+    </script>
+</body>
+</html>

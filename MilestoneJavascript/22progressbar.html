@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 15px;
+      background-color: #ff0000;
+      z-index: 1000;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+  <div style="height: 150vh;"></div>
+
+  <script>
+    document.addEventListener('scroll',()=>
+    {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+      const scrolled = (scrollTop / scrollHeight) * 100;
+
+      updateProgressBar(scrolled);
+      
+    });
+
+    function updateProgressBar(value) {
+      const progressBar = document.getElementById('progress-bar');
+      progressBar.style.width = value + '%';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeTextOnbuttonClick</title>
+    <style>
+     
+      .div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .div1{
+        margin: 150px;
+        
+      }
+      #btn{
+        border-radius: 30px;
+        padding: 20px;
+        font-weight: 800;
+        font-size: medium;
+        cursor: pointer;
+       
+      }
+      #btn:hover{
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="div1">
+            <h1 id="h1">The most affordable learning
+                platform</h1>
+            <button id="btn">Change Text</button>
+        </div>
+    </div>
+
+    <script>
+        const head=document.getElementById("h1");
+        const button=document.getElementById("btn");
+        button.addEventListener("click",function()
+        {
+        if(head.textContent==="The most affordable learning platform")
+        {
+            head.textContent="PW Skills"
+
+        }
+        else{
+            head.textContent="The most affordable learning platform"
+        }
+    })
+                
+    </script>
+</body>
+</html>
