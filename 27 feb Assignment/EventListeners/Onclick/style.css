@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35vh;
+
+}
+#btn{
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+}
