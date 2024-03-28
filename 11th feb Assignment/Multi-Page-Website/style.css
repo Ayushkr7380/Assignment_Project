@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: manrope;
+}
+body{
+    background-color: #f0f4f5;
+    /* background-color: rgb(0, 0, 0); */
+}
+/* Header CSS  */
+#header{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu ul{
+    display: flex;
+    list-style: none;
+}
+#menu ul li {
+    margin: 0px 35px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+#logoimg img{
+    height: 35px;
+}
+/* main  */
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#mainleft{
+    margin-top: 12vh;
+}
+#topangle img{
+    height: 20px;
+}
+#content h1{
+    font-weight:bolder;
+    font-size:65px;
+}
+#content img{
+    top: 129px;
+    position: absolute;
+    height: 450px;
+    width: 500px;
+    left: 390px;
+}
+#endcontent{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 0vw;
+
+}
+#btn button{
+    font-weight: 900;
+    border-radius: 16px;
+    padding: 6px 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    background-color: #20bc7e;
+}
+
+#downanglemouse img:first-child{
+    height: 20px;
+    position: relative;
+    top: -5vh;
+    left: 3vw;
+}
+#downanglemouse img:last-child{
+    position: relative;
+    height: 29px;
+    left: 4vw;
+    top: 0vh;
+}
+#mainright img{
+    height: 100px;
+    position: absolute;
+}
+#mainright img:first-child{
+    height: 350px;
+    /* position: relative; */
+    top: 40vh;
+    right: 0vw;
+}
+#mainright img:nth-child(2){
+    height: 250px;
+    right: 0vw;
+    top: 52vh;
+}
+#mainright img:last-child{
+    height: 550px;
+    right: 0px;
+    top: 14vh;
+}
+

@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: manrope;
+}
+body{
+    background-color: #f0f4f5;
+}
+/* Header CSS  */
+#header{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu ul{
+    display: flex;
+    list-style: none;
+}
+#menu ul li {
+    margin: 0px 35px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+#logoimg img{
+    height: 35px;
+}
+/* mainbody */
+
+#maincontact{
+    display: flex;
+    padding: 20px 3px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    max-width: 22%;
+    margin-top: 23vh;
+    margin-left: 30vw;
+}
+#heading h4{
+    font-weight: 900;
+}
+#maincontact form label{
+    font-weight: 600;
+}
+#maincontact form input{
+    outline: none;
+    border: none;
+    /* width: 17vw; */
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+#maincontact form textarea{
+    border-radius:20px ;
+    padding: 3px 10px;
+    outline: none;
+}
+
+#maincontact form button{
+    border-radius: 6px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    width: 100%;
+    background-color: #20bc7e;
+}

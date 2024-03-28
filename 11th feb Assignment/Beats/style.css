@@ -1,0 +1,283 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+
+}
+#beatslogo img{
+    margin: 4vh 0vw;
+    margin-left: 4vw;
+}
+#mainImage img{
+    height: 60vh;
+    width: 16vw;
+    margin-left: 6vw;
+    
+}
+#ulmenu{
+    display: flex;
+    
+}
+#ulmenu li{
+    list-style: none;
+    margin: 4vh 2vw;
+}
+#ulmenu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#shop{
+    background-color: rgb(109, 105, 105);
+    color: white;
+    font-weight: 500;
+    border-radius: 1vh;
+    padding: 1vh 2.5vw;
+    margin: -5px 0px;
+    box-shadow: 1px 1px 1px 1px inset rgb(160, 160, 160);
+}
+#beats3{
+    color: white;
+    margin-left: 8vw;
+}
+#beats3 h1{
+    font-size: 44px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#beats3 h5{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#cart{
+    margin-top: 25px;
+    display: flex;
+    background-color: rgb(109, 105, 105);
+    max-width: 17vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart{
+    margin: 2vh 1vw;
+}
+#onear img{
+    margin-left: 12vw;
+}
+#mainend{
+    margin-top: 13vh;
+    display: flex;
+    justify-content: space-around;
+}
+#main2{
+    margin-top: 17vh;
+}
+#specs{
+    display: flex;
+    justify-content: center;
+}
+#main2body{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+#battery , #load{
+    margin-left: -40px;
+}
+#specsimg img{
+    margin-top: 40px;
+    margin-left: 100px;
+    height: 300px;
+}
+.main2img{
+    margin-bottom: 15px;
+}
+#main3{
+    margin-top: 17vh;
+}
+#case{
+    display: flex;
+    justify-content: center;
+}
+
+#main3data{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 15vh;
+}
+#caseimg img {
+    height: 300px;
+    margin-right: 50px;
+}
+#caseheading{
+    margin-top: 10vh;
+}
+#casecart{
+    margin-top: 25px;
+    display: flex;
+    background-color: rgb(109, 105, 105);
+    max-width: 12vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.casecart{
+    margin: 2vh .6vw;
+}
+#main4{
+    margin-top: 17vh;
+}
+#main4body{
+    
+    display: flex;
+    background-color: rgb(109, 105, 105);
+    border-radius: 7px;
+    justify-content: center;
+    color: white;
+    padding: 5vh 0vw;
+}
+#main4data{
+    margin-top: 10vh;
+    margin-right: 50px;
+}
+#main4cart{
+    margin-top: 25px;
+    display: flex;
+    background-color: black;
+    max-width: 12vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#main4img img{
+    height: 250px;
+    margin-top: 5vh;
+}
+.main4cart{
+    margin: 2vh .2vw;
+}
+#main5{
+    margin-top: 17vh;
+}
+#chooseyourstyle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17vh;
+}
+#chooseyourstyle img{
+    height: 100px;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(2,.2fr);
+    gap: 10px;
+    justify-content: center;
+    
+}
+.product{
+    margin-bottom: 11vh;
+    max-width: 12vw;
+    border-radius: 8px;
+    height: 179px;
+    background-color: rgb(109, 105, 105);
+}
+.productimg{
+    
+    display: flex;
+    justify-content: center;
+}
+.productimg img{
+    
+    height: 150px;
+    position: relative;
+    bottom: 60px;
+    
+}
+.productdetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 34px;
+}
+.productdetailsleft{
+    color: white;
+}
+.productdetailsleft h5{
+    margin-bottom: -2px;
+}
+.productdetailsright{
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    background-color: black;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.productdetailsright img{
+    margin-left: 5px;
+}
+#footer{
+    margin: 15vh;
+    display: flex;
+    justify-content: space-around;
+}
+#footerproductul ,  #footersupportul{
+    margin-top: 4vh;
+}
+#footerproductul ul , #footersupportul ul{
+    list-style: none;
+}
+#footerproductul ul a , #footersupportul ul a{
+    text-decoration: none;
+    color: white;
+}
+#footerproducts , #footersupport{
+    font-weight: 600;
+    font-size: 21px;
+    
+}
+#subscribe{
+    margin-top: 6vh;
+    width: 25vw;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(109, 105, 105);
+    border-radius: 7px;
+}
+#subscribe p{
+    padding-right: 60px;
+    color: white;
+    padding-top: 2px;
+    align-content: center;
+}
+#subscribebox{
+    background-color: black;
+    display: flex;
+    padding: 0px 16px;
+    border-radius: 7px;
+    align-items: center;
+}
+#subscribebox img{
+    height: 20px;
+}
+#subscribebox p{
+    color: white;
+    margin-top: 13px;
+    position: relative;
+    right: -55px;
+}
+#handles{
+    margin-top: 7vh;
+}
+.handles{
+    margin:0px 10px;
+}
+
