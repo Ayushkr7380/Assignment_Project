@@ -1,0 +1,33 @@
+#counter{
+    background-color: rgb(255, 50, 85);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 15vh;
+    border-radius: 10px;
+    align-items: center;
+}
+#countdisplay{
+    font-size: 45px;
+    padding-top: 16vh;
+    color: white;
+}
+#buttons button{
+    cursor: pointer;
+    margin: 10px;
+    padding: 1.5rem 2rem;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#resetbutton{
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    padding: .5rem 2rem;
+    border: none;
+    font-size: 20px;
+}

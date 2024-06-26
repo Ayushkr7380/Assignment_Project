@@ -1,0 +1,23 @@
+#instabasic{
+    /* background-color: pink; */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    width: 350px;
+    
+    min-height: 65vh;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+#image{
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+}
+#image img{
+
+    height: 70px;
+    width: 180px;
+}
