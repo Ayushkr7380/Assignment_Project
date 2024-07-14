@@ -1,0 +1,15 @@
+
+Node.js Architecture:
+
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+The architecture consists of:
+- Event Loop: Handles asynchronous operations.
+- V8 Engine: Executes JavaScript code.
+- libuv: Provides cross-platform asynchronous I/O operations.
+- Core Modules: Built-in modules like fs, http, etc.
+- C++ Addons: Allows interfacing with native libraries.
+
+Advantages of Node.js:
+- Non-blocking and asynchronous nature, ideal for I/O intensive applications.
+- Lightweight and efficient, suitable for real-time applications.
+- Large ecosystem of libraries (npm) and active community support.
